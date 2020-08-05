@@ -2962,7 +2962,7 @@ HRESULTERROR AdES::PDFCreateDSSObject(const std::vector<CERT>& Certificates, lon
 }
 
 
-HRESULT AdES::GreekVerifyTimestamp(PCCERT_CONTEXT a, PCRYPT_TIMESTAMP_CONTEXT tc, GREEKRESULTS& r)
+HRESULT AdES::VerifyBelgianTimestamp(PCCERT_CONTEXT a, PCRYPT_TIMESTAMP_CONTEXT tc, BELGIUMRESULTS& r)
 {
 	HRESULT rx = E_FAIL;
 	if (!a || !tc)
@@ -2990,7 +2990,7 @@ HRESULT AdES::GreekVerifyTimestamp(PCCERT_CONTEXT a, PCRYPT_TIMESTAMP_CONTEXT tc
 				NULL,
 				name.data(),1000);
 			wchar_t* a1 = name.data();
-			if (wcscmp(a1, L"HPARCA Time Stamping Services CA") == 0)
+			if (wcscmp(a1, L"Belgium Root CA4") == 0)
 			{
 				// Policy
 				if (strcmp(tc->pTimeStamp->pszTSAPolicyId,"1.3.6.1.4.1.601.10.3.1") == 0)
@@ -3006,7 +3006,7 @@ HRESULT AdES::GreekVerifyTimestamp(PCCERT_CONTEXT a, PCRYPT_TIMESTAMP_CONTEXT tc
 	}
 }
 
-HRESULT AdES::GreekVerifyCertificate(PCCERT_CONTEXT a, const char* sig, DWORD sigsize, GREEKRESULTS& r)
+HRESULT AdES::VerifyBelgianCertificate(PCCERT_CONTEXT a, const char* sig, DWORD sigsize, BELGIUMRESULTS& r)
 {
 	using namespace std;
 	HRESULT rx = E_FAIL;
@@ -3055,7 +3055,7 @@ HRESULT AdES::GreekVerifyCertificate(PCCERT_CONTEXT a, const char* sig, DWORD si
 	if (SUCCEEDED(hr2))
 	{
 		r.Level = (int)LEVEL::T;
-		GreekVerifyTimestamp(ce, ptc, r);
+		VerifyBelgianTimestamp(ce, ptc, r);
 		if (ptc)
 			CryptMemFree(ptc);
 		if (ce)
@@ -3080,9 +3080,6 @@ HRESULTERROR AdES::PESign(LEVEL levx, const char* d, DWORD sz, const std::vector
 	hr = Sign(levx, ToSign.data(), ToSign.size(), Certificates, Params, res2);
 	if (FAILED(hr))
 		return hr;
-
-//	DeleteFile(L"g:\\progs\\osslsigncode\\test2.sig");
-	//PutFile(L"g:\\progs\\osslsigncode\\test2.sig", res2);
 
 	// Append the signature
 	if (p.AddSignature(res2))

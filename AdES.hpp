@@ -167,14 +167,14 @@ public:
 	};
 
 
-	struct GREEKRESULTS
+	struct BELGIUMRESULTS
 	{
 		int Type = 0; // 0 none ,1 soft, 2 hard
 		int TSThere = 0; // 0 none, 1 generic, 2 greek TSA with policy
 		int Level = 0; // Equal to PADES levels
 	};
-	HRESULT GreekVerifyCertificate(PCCERT_CONTEXT c, const char* sig,DWORD sigsize,GREEKRESULTS& r);
-	HRESULT GreekVerifyTimestamp(PCCERT_CONTEXT c, PCRYPT_TIMESTAMP_CONTEXT tc, GREEKRESULTS& r);
+	HRESULT VerifyBelgianCertificate(PCCERT_CONTEXT c, const char* sig,DWORD sigsize,BELGIUMRESULTS& r);
+	HRESULT VerifyBelgianTimestamp(PCCERT_CONTEXT c, PCRYPT_TIMESTAMP_CONTEXT tc, BELGIUMRESULTS& r);
 
 	struct PDFVERIFY
 	{
