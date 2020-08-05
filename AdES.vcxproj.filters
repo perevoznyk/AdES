@@ -2,412 +2,553 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="library.cpp" />
-    <ClCompile Include="AdministrationDomainName.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="miniz.c" />
+    <ClCompile Include="asn1\cades\AdministrationDomainName.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="AlgorithmIdentifier.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\AlgorithmIdentifier.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="AttributeType.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\AlgorithmIdentifier2.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="AttributeTypeAndValue.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\AttributeType.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="AttributeValue.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\AttributeTypeAndValue.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="BuiltInDomainDefinedAttribute.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\AttributeValue.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="BuiltInDomainDefinedAttributes.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\BuiltInDomainDefinedAttribute.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="BuiltInStandardAttributes.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\BuiltInDomainDefinedAttributes.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="CertificateSerialNumber.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\BuiltInStandardAttributes.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="CertPolicyId.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\CertificateSerialNumber.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="CountryName.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\CertPolicyId.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="DirectoryString.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\CommitmentTypeIdentifier.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="EDIPartyName.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\CommitmentTypeIndication.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="ESSCertIDv2.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\CommitmentTypeQualifier.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="ExtensionAttribute.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\CompleteCertificateRefs.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="ExtensionAttributes.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\CompleteRevocationRefs.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="GeneralName.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\CountryName.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="GeneralNames.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\CrlIdentifier.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="Hash.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\CRLListID.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="IssuerSerial.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\CrlOcspRef.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="Name.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\CrlValidatedID.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="NetworkAddress.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\DigestInfo.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="NumericUserIdentifier.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\DirectoryString.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="ORAddress.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\EDIPartyName.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="OrganizationalUnitName.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\ESSCertIDv2.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="OrganizationalUnitNames.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\ExtensionAttribute.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="OrganizationName.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\ExtensionAttributes.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="OtherName.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\GeneralName.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="PersonalName.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\GeneralNames.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="PolicyInformation.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\Hash.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="PolicyQualifierId.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\IssuerSerial.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="PolicyQualifierInfo.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\KeyHash.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="PrivateDomainName.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\Name.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="RDNSequence.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\NetworkAddress.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="RelativeDistinguishedName.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\NumericUserIdentifier.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="SigningCertificateV2.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\OcspIdentifier.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="TerminalIdentifier.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\OcspListID.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="X121Address.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\cades\OcspResponsesID.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ANY.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\ORAddress.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\asn_codecs_prim.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\OrganizationalUnitName.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\asn_SEQUENCE_OF.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\OrganizationalUnitNames.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\asn_SET_OF.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\OrganizationName.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ber_decoder.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\OtherCertID.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ber_tlv_length.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\OtherHash.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ber_tlv_tag.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\OtherHashAlgAndValue.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\BIT_STRING.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\OtherHashValue.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\BMPString.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\OtherName.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\BOOLEAN.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\OtherRevRefs.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constr_CHOICE.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\OtherRevRefType.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constr_SEQUENCE.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\OtherSigningCertificate.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constr_SEQUENCE_OF.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\PersonalName.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constr_SET.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\PolicyInformation.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constr_SET_OF.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\PolicyQualifierId.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constr_TYPE.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\PolicyQualifierInfo.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constraints.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\PostalAddress.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\der_encoder.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\PrivateDomainName.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ENUMERATED.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\RDNSequence.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\GeneralizedTime.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\RelativeDistinguishedName.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\GeneralString.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\ResponderID.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\GraphicString.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SigDataV1Serialized.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\IA5String.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SigFormatDescriptorV1.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\INTEGER.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SignaturePolicy.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ISO646String.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SignaturePolicyId.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\NativeEnumerated.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SignaturePolicyIdentifier.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\NativeInteger.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SignaturePolicyImplied.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\NativeReal.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SignerLocation.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\NULL.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SigningCertificateV2.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\NumericString.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SigPolicyHash.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\OBJECT_IDENTIFIER.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SigPolicyId.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ObjectDescriptor.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SigPolicyQualifierId.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\OCTET_STRING.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SigPolicyQualifierInfo.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\per_decoder.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SpcAttributeTypeAndOptionalValue.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\per_encoder.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SpcIndirectDataContent.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\per_support.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SpcIndirectDataContentV2.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\PrintableString.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SpcLink.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\REAL.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SpcPeImageData.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\RELATIVE-OID.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SpcPeImageFlags.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\T61String.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SpcSerializedObject.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\TeletexString.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SpcSpOpusInfo.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\UniversalString.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SpcString.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\UTCTime.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\SpcUuid.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\UTF8String.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\TerminalIdentifier.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\VideotexString.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\TestTest.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\VisibleString.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\cades\X121Address.c">
+      <Filter>CADES</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\xer_decoder.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\skeletons\ANY.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\xer_encoder.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\skeletons\asn_codecs_prim.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="G:\PROGS\asn1\skeletons\xer_support.c">
-      <Filter>Skeleton</Filter>
+    <ClCompile Include="asn1\skeletons\asn_SEQUENCE_OF.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="OtherHashAlgAndValue.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\asn_SET_OF.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="OtherHashValue.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\ber_decoder.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SignaturePolicy.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\ber_tlv_length.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SignaturePolicyId.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\ber_tlv_tag.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SignaturePolicyImplied.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\BIT_STRING.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SigPolicyHash.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\BMPString.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SigPolicyId.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\BOOLEAN.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SigPolicyQualifierId.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\constr_CHOICE.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SigPolicyQualifierInfo.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\constr_SEQUENCE.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="CommitmentTypeIdentifier.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\constr_SEQUENCE_OF.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="CommitmentTypeIndication.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\constr_SET.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="CommitmentTypeQualifier.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\constr_SET_OF.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="PostalAddress.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\constr_TYPE.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SignerLocation.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\constraints.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="CompleteCertificateRefs.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\der_encoder.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="OtherCertID.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\ENUMERATED.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="OtherHash.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\GeneralizedTime.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="OtherSigningCertificate.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\GeneralString.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="CompleteRevocationRefs.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\GraphicString.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="CrlIdentifier.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\IA5String.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="CRLListID.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\INTEGER.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="CrlOcspRef.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\ISO646String.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="CrlValidatedID.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\NativeEnumerated.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="KeyHash.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\NativeInteger.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="OcspIdentifier.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\NativeReal.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="OcspListID.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\NULL.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="OcspResponsesID.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\NumericString.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="OtherRevRefs.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\OBJECT_IDENTIFIER.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="OtherRevRefType.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\ObjectDescriptor.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="ResponderID.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\OCTET_STRING.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SignaturePolicyIdentifier.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\per_decoder.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="TestTest.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\per_encoder.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SpcIndirectDataContent.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\per_support.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="DigestInfo.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\PrintableString.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SpcAttributeTypeAndOptionalValue.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\REAL.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SpcIndirectDataContentV2.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\RELATIVE-OID.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="AlgorithmIdentifier2.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\T61String.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SpcPeImageData.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\TeletexString.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SpcLink.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\UniversalString.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SpcPeImageFlags.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\UTCTime.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SpcSerializedObject.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\UTF8String.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SpcString.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\VideotexString.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SpcUuid.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\VisibleString.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
-    <ClCompile Include="SpcSpOpusInfo.c">
-      <Filter>ASNC</Filter>
+    <ClCompile Include="asn1\skeletons\xer_decoder.c">
+      <Filter>ASN1</Filter>
+    </ClCompile>
+    <ClCompile Include="asn1\skeletons\xer_encoder.c">
+      <Filter>ASN1</Filter>
+    </ClCompile>
+    <ClCompile Include="asn1\skeletons\xer_support.c">
+      <Filter>ASN1</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="cades.asn1" />
+    <ClInclude Include="pdf.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="AdES.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="zipall.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="miniz.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="ASNC">
-      <UniqueIdentifier>{ea3eb388-5376-42b3-9387-f1333fc502c6}</UniqueIdentifier>
+    <CustomBuild Include=".\asn1\cades\cades.asn1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{f2f93823-70d5-4b8a-86e3-d70cb9555bd9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Skeleton">
-      <UniqueIdentifier>{85dfd83b-28fa-4870-8d72-4dd7a2c54868}</UniqueIdentifier>
+    <Filter Include="CADES">
+      <UniqueIdentifier>{ac8ba1a3-5a83-4d65-a6f9-73f2d569a29f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASN1">
+      <UniqueIdentifier>{7e1e8640-5f56-4d62-9f8b-46ae4a6467c5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AdES.hpp" />
+    <None Include="asn1\cades\ANY.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\asn_codecs_prim.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\asn_SEQUENCE_OF.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\asn_SET_OF.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\ber_decoder.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\ber_tlv_length.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\ber_tlv_tag.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\BIT_STRING.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\BMPString.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\BOOLEAN.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\constr_CHOICE.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\constr_SEQUENCE.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\constr_SEQUENCE_OF.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\constr_SET.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\constr_SET_OF.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\constr_TYPE.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\constraints.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\converter-sample.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\der_encoder.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\GeneralizedTime.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\IA5String.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\INTEGER.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\NativeEnumerated.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\NativeInteger.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\NULL.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\NumericString.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\OBJECT_IDENTIFIER.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\OCTET_STRING.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\per_decoder.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\per_encoder.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\per_support.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\PrintableString.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\TeletexString.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\UniversalString.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\UTCTime.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\UTF8String.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\xer_decoder.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\xer_encoder.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
+    <None Include="asn1\cades\xer_support.c.lnk">
+      <Filter>CADES</Filter>
+    </None>
   </ItemGroup>
 </Project>

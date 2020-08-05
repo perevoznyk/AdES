@@ -19,154 +19,202 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AdministrationDomainName.c" />
-    <ClCompile Include="AlgorithmIdentifier.c" />
-    <ClCompile Include="AlgorithmIdentifier2.c" />
-    <ClCompile Include="AttributeType.c" />
-    <ClCompile Include="AttributeTypeAndValue.c" />
-    <ClCompile Include="AttributeValue.c" />
-    <ClCompile Include="BuiltInDomainDefinedAttribute.c" />
-    <ClCompile Include="BuiltInDomainDefinedAttributes.c" />
-    <ClCompile Include="BuiltInStandardAttributes.c" />
-    <ClCompile Include="CertificateSerialNumber.c" />
-    <ClCompile Include="CertPolicyId.c" />
-    <ClCompile Include="CommitmentTypeIdentifier.c" />
-    <ClCompile Include="CommitmentTypeIndication.c" />
-    <ClCompile Include="CommitmentTypeQualifier.c" />
-    <ClCompile Include="CompleteCertificateRefs.c" />
-    <ClCompile Include="CompleteRevocationRefs.c" />
-    <ClCompile Include="CountryName.c" />
-    <ClCompile Include="CrlIdentifier.c" />
-    <ClCompile Include="CRLListID.c" />
-    <ClCompile Include="CrlOcspRef.c" />
-    <ClCompile Include="CrlValidatedID.c" />
-    <ClCompile Include="DigestInfo.c" />
-    <ClCompile Include="DirectoryString.c" />
-    <ClCompile Include="EDIPartyName.c" />
-    <ClCompile Include="ESSCertIDv2.c" />
-    <ClCompile Include="ExtensionAttribute.c" />
-    <ClCompile Include="ExtensionAttributes.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ANY.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\asn_codecs_prim.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\asn_SEQUENCE_OF.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\asn_SET_OF.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ber_decoder.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ber_tlv_length.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ber_tlv_tag.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\BIT_STRING.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\BMPString.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\BOOLEAN.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constraints.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constr_CHOICE.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constr_SEQUENCE.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constr_SEQUENCE_OF.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constr_SET.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constr_SET_OF.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\constr_TYPE.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\der_encoder.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ENUMERATED.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\GeneralizedTime.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\GeneralString.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\GraphicString.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\IA5String.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\INTEGER.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ISO646String.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\NativeEnumerated.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\NativeInteger.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\NativeReal.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\NULL.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\NumericString.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\ObjectDescriptor.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\OBJECT_IDENTIFIER.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\OCTET_STRING.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\per_decoder.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\per_encoder.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\per_support.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\PrintableString.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\REAL.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\RELATIVE-OID.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\T61String.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\TeletexString.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\UniversalString.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\UTCTime.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\UTF8String.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\VideotexString.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\VisibleString.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\xer_decoder.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\xer_encoder.c" />
-    <ClCompile Include="G:\PROGS\asn1\skeletons\xer_support.c" />
-    <ClCompile Include="GeneralName.c" />
-    <ClCompile Include="GeneralNames.c" />
-    <ClCompile Include="Hash.c" />
-    <ClCompile Include="IssuerSerial.c" />
-    <ClCompile Include="KeyHash.c" />
+    <ClCompile Include="asn1\cades\AdministrationDomainName.c" />
+    <ClCompile Include="asn1\cades\AlgorithmIdentifier.c" />
+    <ClCompile Include="asn1\cades\AlgorithmIdentifier2.c" />
+    <ClCompile Include="asn1\cades\AttributeType.c" />
+    <ClCompile Include="asn1\cades\AttributeTypeAndValue.c" />
+    <ClCompile Include="asn1\cades\AttributeValue.c" />
+    <ClCompile Include="asn1\cades\BuiltInDomainDefinedAttribute.c" />
+    <ClCompile Include="asn1\cades\BuiltInDomainDefinedAttributes.c" />
+    <ClCompile Include="asn1\cades\BuiltInStandardAttributes.c" />
+    <ClCompile Include="asn1\cades\CertificateSerialNumber.c" />
+    <ClCompile Include="asn1\cades\CertPolicyId.c" />
+    <ClCompile Include="asn1\cades\CommitmentTypeIdentifier.c" />
+    <ClCompile Include="asn1\cades\CommitmentTypeIndication.c" />
+    <ClCompile Include="asn1\cades\CommitmentTypeQualifier.c" />
+    <ClCompile Include="asn1\cades\CompleteCertificateRefs.c" />
+    <ClCompile Include="asn1\cades\CompleteRevocationRefs.c" />
+    <ClCompile Include="asn1\cades\CountryName.c" />
+    <ClCompile Include="asn1\cades\CrlIdentifier.c" />
+    <ClCompile Include="asn1\cades\CRLListID.c" />
+    <ClCompile Include="asn1\cades\CrlOcspRef.c" />
+    <ClCompile Include="asn1\cades\CrlValidatedID.c" />
+    <ClCompile Include="asn1\cades\DigestInfo.c" />
+    <ClCompile Include="asn1\cades\DirectoryString.c" />
+    <ClCompile Include="asn1\cades\EDIPartyName.c" />
+    <ClCompile Include="asn1\cades\ESSCertIDv2.c" />
+    <ClCompile Include="asn1\cades\ExtensionAttribute.c" />
+    <ClCompile Include="asn1\cades\ExtensionAttributes.c" />
+    <ClCompile Include="asn1\cades\GeneralName.c" />
+    <ClCompile Include="asn1\cades\GeneralNames.c" />
+    <ClCompile Include="asn1\cades\Hash.c" />
+    <ClCompile Include="asn1\cades\IssuerSerial.c" />
+    <ClCompile Include="asn1\cades\KeyHash.c" />
+    <ClCompile Include="asn1\cades\Name.c" />
+    <ClCompile Include="asn1\cades\NetworkAddress.c" />
+    <ClCompile Include="asn1\cades\NumericUserIdentifier.c" />
+    <ClCompile Include="asn1\cades\OcspIdentifier.c" />
+    <ClCompile Include="asn1\cades\OcspListID.c" />
+    <ClCompile Include="asn1\cades\OcspResponsesID.c" />
+    <ClCompile Include="asn1\cades\ORAddress.c" />
+    <ClCompile Include="asn1\cades\OrganizationalUnitName.c" />
+    <ClCompile Include="asn1\cades\OrganizationalUnitNames.c" />
+    <ClCompile Include="asn1\cades\OrganizationName.c" />
+    <ClCompile Include="asn1\cades\OtherCertID.c" />
+    <ClCompile Include="asn1\cades\OtherHash.c" />
+    <ClCompile Include="asn1\cades\OtherHashAlgAndValue.c" />
+    <ClCompile Include="asn1\cades\OtherHashValue.c" />
+    <ClCompile Include="asn1\cades\OtherName.c" />
+    <ClCompile Include="asn1\cades\OtherRevRefs.c" />
+    <ClCompile Include="asn1\cades\OtherRevRefType.c" />
+    <ClCompile Include="asn1\cades\OtherSigningCertificate.c" />
+    <ClCompile Include="asn1\cades\PersonalName.c" />
+    <ClCompile Include="asn1\cades\PolicyInformation.c" />
+    <ClCompile Include="asn1\cades\PolicyQualifierId.c" />
+    <ClCompile Include="asn1\cades\PolicyQualifierInfo.c" />
+    <ClCompile Include="asn1\cades\PostalAddress.c" />
+    <ClCompile Include="asn1\cades\PrivateDomainName.c" />
+    <ClCompile Include="asn1\cades\RDNSequence.c" />
+    <ClCompile Include="asn1\cades\RelativeDistinguishedName.c" />
+    <ClCompile Include="asn1\cades\ResponderID.c" />
+    <ClCompile Include="asn1\cades\SigDataV1Serialized.c" />
+    <ClCompile Include="asn1\cades\SigFormatDescriptorV1.c" />
+    <ClCompile Include="asn1\cades\SignaturePolicy.c" />
+    <ClCompile Include="asn1\cades\SignaturePolicyId.c" />
+    <ClCompile Include="asn1\cades\SignaturePolicyIdentifier.c" />
+    <ClCompile Include="asn1\cades\SignaturePolicyImplied.c" />
+    <ClCompile Include="asn1\cades\SignerLocation.c" />
+    <ClCompile Include="asn1\cades\SigningCertificateV2.c" />
+    <ClCompile Include="asn1\cades\SigPolicyHash.c" />
+    <ClCompile Include="asn1\cades\SigPolicyId.c" />
+    <ClCompile Include="asn1\cades\SigPolicyQualifierId.c" />
+    <ClCompile Include="asn1\cades\SigPolicyQualifierInfo.c" />
+    <ClCompile Include="asn1\cades\SpcAttributeTypeAndOptionalValue.c" />
+    <ClCompile Include="asn1\cades\SpcIndirectDataContent.c" />
+    <ClCompile Include="asn1\cades\SpcIndirectDataContentV2.c" />
+    <ClCompile Include="asn1\cades\SpcLink.c" />
+    <ClCompile Include="asn1\cades\SpcPeImageData.c" />
+    <ClCompile Include="asn1\cades\SpcPeImageFlags.c" />
+    <ClCompile Include="asn1\cades\SpcSerializedObject.c" />
+    <ClCompile Include="asn1\cades\SpcSpOpusInfo.c" />
+    <ClCompile Include="asn1\cades\SpcString.c" />
+    <ClCompile Include="asn1\cades\SpcUuid.c" />
+    <ClCompile Include="asn1\cades\TerminalIdentifier.c" />
+    <ClCompile Include="asn1\cades\TestTest.c" />
+    <ClCompile Include="asn1\cades\X121Address.c" />
+    <ClCompile Include="asn1\skeletons\ANY.c" />
+    <ClCompile Include="asn1\skeletons\asn_codecs_prim.c" />
+    <ClCompile Include="asn1\skeletons\asn_SEQUENCE_OF.c" />
+    <ClCompile Include="asn1\skeletons\asn_SET_OF.c" />
+    <ClCompile Include="asn1\skeletons\ber_decoder.c" />
+    <ClCompile Include="asn1\skeletons\ber_tlv_length.c" />
+    <ClCompile Include="asn1\skeletons\ber_tlv_tag.c" />
+    <ClCompile Include="asn1\skeletons\BIT_STRING.c" />
+    <ClCompile Include="asn1\skeletons\BMPString.c" />
+    <ClCompile Include="asn1\skeletons\BOOLEAN.c" />
+    <ClCompile Include="asn1\skeletons\constraints.c" />
+    <ClCompile Include="asn1\skeletons\constr_CHOICE.c" />
+    <ClCompile Include="asn1\skeletons\constr_SEQUENCE.c" />
+    <ClCompile Include="asn1\skeletons\constr_SEQUENCE_OF.c" />
+    <ClCompile Include="asn1\skeletons\constr_SET.c" />
+    <ClCompile Include="asn1\skeletons\constr_SET_OF.c" />
+    <ClCompile Include="asn1\skeletons\constr_TYPE.c" />
+    <ClCompile Include="asn1\skeletons\der_encoder.c" />
+    <ClCompile Include="asn1\skeletons\ENUMERATED.c" />
+    <ClCompile Include="asn1\skeletons\GeneralizedTime.c" />
+    <ClCompile Include="asn1\skeletons\GeneralString.c" />
+    <ClCompile Include="asn1\skeletons\GraphicString.c" />
+    <ClCompile Include="asn1\skeletons\IA5String.c" />
+    <ClCompile Include="asn1\skeletons\INTEGER.c" />
+    <ClCompile Include="asn1\skeletons\ISO646String.c" />
+    <ClCompile Include="asn1\skeletons\NativeEnumerated.c" />
+    <ClCompile Include="asn1\skeletons\NativeInteger.c" />
+    <ClCompile Include="asn1\skeletons\NativeReal.c" />
+    <ClCompile Include="asn1\skeletons\NULL.c" />
+    <ClCompile Include="asn1\skeletons\NumericString.c" />
+    <ClCompile Include="asn1\skeletons\ObjectDescriptor.c" />
+    <ClCompile Include="asn1\skeletons\OBJECT_IDENTIFIER.c" />
+    <ClCompile Include="asn1\skeletons\OCTET_STRING.c" />
+    <ClCompile Include="asn1\skeletons\per_decoder.c" />
+    <ClCompile Include="asn1\skeletons\per_encoder.c" />
+    <ClCompile Include="asn1\skeletons\per_support.c" />
+    <ClCompile Include="asn1\skeletons\PrintableString.c" />
+    <ClCompile Include="asn1\skeletons\REAL.c" />
+    <ClCompile Include="asn1\skeletons\RELATIVE-OID.c" />
+    <ClCompile Include="asn1\skeletons\T61String.c" />
+    <ClCompile Include="asn1\skeletons\TeletexString.c" />
+    <ClCompile Include="asn1\skeletons\UniversalString.c" />
+    <ClCompile Include="asn1\skeletons\UTCTime.c" />
+    <ClCompile Include="asn1\skeletons\UTF8String.c" />
+    <ClCompile Include="asn1\skeletons\VideotexString.c" />
+    <ClCompile Include="asn1\skeletons\VisibleString.c" />
+    <ClCompile Include="asn1\skeletons\xer_decoder.c" />
+    <ClCompile Include="asn1\skeletons\xer_encoder.c" />
+    <ClCompile Include="asn1\skeletons\xer_support.c" />
     <ClCompile Include="library.cpp" />
-    <ClCompile Include="Name.c" />
-    <ClCompile Include="NetworkAddress.c" />
-    <ClCompile Include="NumericUserIdentifier.c" />
-    <ClCompile Include="OcspIdentifier.c" />
-    <ClCompile Include="OcspListID.c" />
-    <ClCompile Include="OcspResponsesID.c" />
-    <ClCompile Include="ORAddress.c" />
-    <ClCompile Include="OrganizationalUnitName.c" />
-    <ClCompile Include="OrganizationalUnitNames.c" />
-    <ClCompile Include="OrganizationName.c" />
-    <ClCompile Include="OtherCertID.c" />
-    <ClCompile Include="OtherHash.c" />
-    <ClCompile Include="OtherHashAlgAndValue.c" />
-    <ClCompile Include="OtherHashValue.c" />
-    <ClCompile Include="OtherName.c" />
-    <ClCompile Include="OtherRevRefs.c" />
-    <ClCompile Include="OtherRevRefType.c" />
-    <ClCompile Include="OtherSigningCertificate.c" />
-    <ClCompile Include="PersonalName.c" />
-    <ClCompile Include="PolicyInformation.c" />
-    <ClCompile Include="PolicyQualifierId.c" />
-    <ClCompile Include="PolicyQualifierInfo.c" />
-    <ClCompile Include="PostalAddress.c" />
-    <ClCompile Include="PrivateDomainName.c" />
-    <ClCompile Include="RDNSequence.c" />
-    <ClCompile Include="RelativeDistinguishedName.c" />
-    <ClCompile Include="ResponderID.c" />
-    <ClCompile Include="SignaturePolicy.c" />
-    <ClCompile Include="SignaturePolicyId.c" />
-    <ClCompile Include="SignaturePolicyIdentifier.c" />
-    <ClCompile Include="SignaturePolicyImplied.c" />
-    <ClCompile Include="SignerLocation.c" />
-    <ClCompile Include="SigningCertificateV2.c" />
-    <ClCompile Include="SigPolicyHash.c" />
-    <ClCompile Include="SigPolicyId.c" />
-    <ClCompile Include="SigPolicyQualifierId.c" />
-    <ClCompile Include="SigPolicyQualifierInfo.c" />
-    <ClCompile Include="SpcAttributeTypeAndOptionalValue.c" />
-    <ClCompile Include="SpcIndirectDataContent.c" />
-    <ClCompile Include="SpcIndirectDataContentV2.c" />
-    <ClCompile Include="SpcLink.c" />
-    <ClCompile Include="SpcPeImageData.c" />
-    <ClCompile Include="SpcPeImageFlags.c" />
-    <ClCompile Include="SpcSerializedObject.c" />
-    <ClCompile Include="SpcSpOpusInfo.c" />
-    <ClCompile Include="SpcString.c" />
-    <ClCompile Include="SpcUuid.c" />
-    <ClCompile Include="TerminalIdentifier.c" />
-    <ClCompile Include="TestTest.c" />
-    <ClCompile Include="X121Address.c" />
+    <ClCompile Include="miniz.c" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="cades.asn1">
+    <CustomBuild Include=".\asn1\cades\cades.asn1">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\asn1\asn1c.exe cades.asn1</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\asn1\asn1c.exe cades.asn1</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\asn1\asn1c.exe cades.asn1</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\asn1\asn1c.exe cades.asn1</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SigningCertificateV2.c</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SigningCertificateV2.c</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SigningCertificateV2.c</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SigningCertificateV2.c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\asn1\cades &amp; ..\asn1c.exe cades.asn1</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\asn1\cades &amp; ..\asn1c.exe cades.asn1</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\asn1\cades &amp; ..\asn1c.exe cades.asn1</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\asn1\cades &amp; ..\asn1c.exe cades.asn1</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\asn1\cades\SigningCertificateV2.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\asn1\cades\SigningCertificateV2.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\asn1\cades\SigningCertificateV2.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\asn1\cades\SigningCertificateV2.c</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build CADES ASN files</Message>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdES.hpp" />
+    <ClInclude Include="miniz.h" />
+    <ClInclude Include="pdf.hpp" />
+    <ClInclude Include="zipall.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="asn1\cades\ANY.c.lnk" />
+    <None Include="asn1\cades\asn_codecs_prim.c.lnk" />
+    <None Include="asn1\cades\asn_SEQUENCE_OF.c.lnk" />
+    <None Include="asn1\cades\asn_SET_OF.c.lnk" />
+    <None Include="asn1\cades\ber_decoder.c.lnk" />
+    <None Include="asn1\cades\ber_tlv_length.c.lnk" />
+    <None Include="asn1\cades\ber_tlv_tag.c.lnk" />
+    <None Include="asn1\cades\BIT_STRING.c.lnk" />
+    <None Include="asn1\cades\BMPString.c.lnk" />
+    <None Include="asn1\cades\BOOLEAN.c.lnk" />
+    <None Include="asn1\cades\constraints.c.lnk" />
+    <None Include="asn1\cades\constr_CHOICE.c.lnk" />
+    <None Include="asn1\cades\constr_SEQUENCE.c.lnk" />
+    <None Include="asn1\cades\constr_SEQUENCE_OF.c.lnk" />
+    <None Include="asn1\cades\constr_SET.c.lnk" />
+    <None Include="asn1\cades\constr_SET_OF.c.lnk" />
+    <None Include="asn1\cades\constr_TYPE.c.lnk" />
+    <None Include="asn1\cades\converter-sample.c.lnk" />
+    <None Include="asn1\cades\der_encoder.c.lnk" />
+    <None Include="asn1\cades\GeneralizedTime.c.lnk" />
+    <None Include="asn1\cades\IA5String.c.lnk" />
+    <None Include="asn1\cades\INTEGER.c.lnk" />
+    <None Include="asn1\cades\NativeEnumerated.c.lnk" />
+    <None Include="asn1\cades\NativeInteger.c.lnk" />
+    <None Include="asn1\cades\NULL.c.lnk" />
+    <None Include="asn1\cades\NumericString.c.lnk" />
+    <None Include="asn1\cades\OBJECT_IDENTIFIER.c.lnk" />
+    <None Include="asn1\cades\OCTET_STRING.c.lnk" />
+    <None Include="asn1\cades\per_decoder.c.lnk" />
+    <None Include="asn1\cades\per_encoder.c.lnk" />
+    <None Include="asn1\cades\per_support.c.lnk" />
+    <None Include="asn1\cades\PrintableString.c.lnk" />
+    <None Include="asn1\cades\TeletexString.c.lnk" />
+    <None Include="asn1\cades\UniversalString.c.lnk" />
+    <None Include="asn1\cades\UTCTime.c.lnk" />
+    <None Include="asn1\cades\UTF8String.c.lnk" />
+    <None Include="asn1\cades\xer_decoder.c.lnk" />
+    <None Include="asn1\cades\xer_encoder.c.lnk" />
+    <None Include="asn1\cades\xer_support.c.lnk" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0092d93a-dcd2-440d-90fb-5320f717d7e0}</ProjectGuid>
@@ -219,29 +267,29 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>.\</OutDir>
-    <IntDir>.\</IntDir>
+    <OutDir>$(SolutionDir)bin\x86\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\x86\$(Configuration)\</IntDir>
     <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.metagen;*.bi</ExtensionsToDeleteOnClean>
     <GenerateManifest>true</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>.\</OutDir>
-    <IntDir>.\</IntDir>
+    <OutDir>$(SolutionDir)bin\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\x64\$(Configuration)\</IntDir>
     <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.metagen;*.bi</ExtensionsToDeleteOnClean>
     <GenerateManifest>true</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>.\</OutDir>
-    <IntDir>.\</IntDir>
+    <OutDir>$(SolutionDir)bin\x86\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\x86\$(Configuration)\</IntDir>
     <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.metagen;*.bi</ExtensionsToDeleteOnClean>
     <GenerateManifest>true</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>.\</OutDir>
-    <IntDir>.\</IntDir>
+    <OutDir>$(SolutionDir)bin\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\x64\$(Configuration)\</IntDir>
     <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.metagen;*.bi</ExtensionsToDeleteOnClean>
     <GenerateManifest>true</GenerateManifest>
   </PropertyGroup>
@@ -259,7 +307,7 @@
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>.\asn1\skeletons</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\asn1\cades;.\asn1\skeletons;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -269,6 +317,12 @@
     <ResourceCompile>
       <PreprocessorDefinitions>_X86_;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -283,7 +337,7 @@
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>.\asn1\skeletons</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\asn1\cades;.\asn1\skeletons;.\Extlibs\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -309,7 +363,7 @@
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>.\asn1\skeletons</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\asn1\cades;.\asn1\skeletons;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -321,6 +375,12 @@
     <ResourceCompile>
       <PreprocessorDefinitions>_X86_;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -337,7 +397,7 @@
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>.\asn1\skeletons</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\asn1\cades;.\asn1\skeletons;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

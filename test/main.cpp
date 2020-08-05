@@ -14,7 +14,7 @@
 
 #pragma comment(lib,"Cryptui.lib")
 #pragma comment(lib,"ws2_32.lib")
-#pragma comment(lib,"..\\AdES.lib")
+#pragma comment(lib,"..\\bin\\x86\\release\\AdES.lib")
 #include "..\\AdES.hpp"
 
 #include "..\\xml\\xml3all.h"
@@ -186,7 +186,7 @@ int main()
 
 	// Load the file
 	vector<char> hello;
-	LoadFile(L"..\\hello.txt", hello);
+	LoadFile(L"hello.txt", hello);
 	char* msg = hello.data();
 	size_t b = hello.size();
 	AdES a;
@@ -297,10 +297,10 @@ int main()
 	if (Certs.empty())
 		return 0;
 	
-	LoadFile(L"..\\hello.xml", hellox);
-	LoadFile(L"..\\hello.pdf", hellopdf);
+	LoadFile(L"hello.xml", hellox);
+	LoadFile(L"hello.pdf", hellopdf);
 //	LoadFile(L"g:\\pdftest\\2\\6.pdf", hellopdf);
-	LoadFile(L"..\\hello.xml", helloxz);
+	LoadFile(L"hello.xml", helloxz);
 	helloxz.resize(helloxz.size() + 1);
 
 	// CAdES Try
@@ -330,7 +330,7 @@ int main()
 	Params.commitmentTypeOid = "1.2.840.113549.1.9.16.6.1";
 	//Params.HashAlgorithm.pszObjId = "2.16.840.1.101.3.4.2.8";
 	auto hr1 = a.Sign(AdES::LEVEL::T, msg, (DWORD)b, Certs,  Params,Sig);
-	PutFile(L"..\\hello2.p7m", Sig);
+	PutFile(L"hello2.p7m", Sig);
 	AdES::LEVEL lev;
 	vector<PCCERT_CONTEXT> CV;
 	vector<char> dmsg;
@@ -348,16 +348,16 @@ int main()
 	
 	Sig.clear();
 	auto hr6 = a.PDFSign(AdES::LEVEL::T, hellopdf.data(), (DWORD)hellopdf.size(), Certs, Params, Sig);
-	PutFile(L"..\\hello2.pdf", Sig);
-	ShellExecute(0, L"open", L"..\\hello2.pdf", 0, 0, 0);
+	PutFile(L"hello2.pdf", Sig);
+	ShellExecute(0, L"open", L"hello2.pdf", 0, 0, 0);
 	Sig.clear();
 
 
 	// EXE try
-	Sig.clear();
-	auto hr7 = a.PESign(AdES::LEVEL::T, pe.data(), (DWORD)pe.size(), Certs, Params, Sig);
-	PutFile(L".\\test_signed.exe", Sig);
-	Sig.clear();
+	//Sig.clear();
+	//auto hr7 = a.PESign(AdES::LEVEL::T, pe.data(), (DWORD)pe.size(), Certs, Params, Sig);
+	//PutFile(L".\\test_signed.exe", Sig);
+	//Sig.clear();
 
 	// XML Try
 	Params.xextras = "<extra><alert>Hello</alert></extra>";
@@ -376,7 +376,7 @@ int main()
 		vector<AdES::FILEREF> ax = { a1};
 		auto hr2 = a.XMLSign(AdES::LEVEL::T, ax, Certs, Params, Sig);
 	}
-	PutFile(L"..\\hello2.xml", Sig);
+	PutFile(L"hello2.xml", Sig);
 
 	// Some detached XML
 	if (true)
@@ -385,7 +385,7 @@ int main()
 		AdES::FILEREF a1(helloxz.data(), 0, "blahblah1");
 		vector<AdES::FILEREF> ax = { a1 };
 		auto hr2 = a.XMLSign(AdES::LEVEL::T, ax, Certs, Params, Sig);
-		PutFile(L"..\\hello3.xml", Sig);
+		PutFile(L"hello3.xml", Sig);
 	}
 
 	// ASiC Try
@@ -393,13 +393,13 @@ int main()
 	vector<AdES::FILEREF> tx = { t1 };
 	//auto hr4 = a.ASiC(AdES::ALEVEL::S, AdES::ATYPE::CADES, AdES::LEVEL::XL,tx, Certs, Params, Sig);
 	auto hr4 = a.ASiC(AdES::ALEVEL::S, AdES::ATYPE::XADES,AdES::LEVEL::T, tx, Certs,  Params, Sig);
-	PutFile(L"..\\hello2.asics", Sig);
+	PutFile(L"hello2.asics", Sig);
 
 	AdES::FILEREF t2(hellox.data(), (DWORD)hellox.size(), "hello.xml");
 	vector<AdES::FILEREF> tx2 = { t1,t2 };
 	//auto hr5 = a.ASiC(AdES::ALEVEL::E, AdES::ATYPE::CADES, AdES::LEVEL::XL,tx2, Certs, Params, Sig);
 	auto hr5 = a.ASiC(AdES::ALEVEL::E, AdES::ATYPE::XADES, AdES::LEVEL::T,tx2, Certs, Params, Sig);
-	PutFile(L"..\\hello2.asice", Sig);
+	PutFile(L"hello2.asice", Sig);
 
 
 

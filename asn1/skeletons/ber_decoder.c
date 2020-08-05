@@ -67,10 +67,10 @@ ber_check_tags(asn_codec_ctx_t *opt_codec_ctx,
 		const void *ptr, size_t size, int tag_mode, int last_tag_form,
 		ber_tlv_len_t *last_length, int *opt_tlv_form) {
 	ssize_t consumed_myself = 0;
-	ssize_t tag_len;
-	ssize_t len_len;
-	ber_tlv_tag_t tlv_tag;
-	ber_tlv_len_t tlv_len;
+	ssize_t tag_len = 0;
+	ssize_t len_len = 0;
+	ber_tlv_tag_t tlv_tag = 0;
+	ber_tlv_len_t tlv_len = 0;
 	ber_tlv_len_t limit_len = -1;
 	int expect_00_terminators = 0;
 	int tlv_constr = -1;	/* If CHOICE, opt_tlv_form is not given */

@@ -2998,6 +2998,11 @@ HRESULT AdES::GreekVerifyTimestamp(PCCERT_CONTEXT a, PCRYPT_TIMESTAMP_CONTEXT tc
 			}
 		}
 		LocalFree(ku);
+		return S_OK;
+	}
+	else
+	{
+		return rx;
 	}
 }
 
@@ -4727,7 +4732,7 @@ HRESULT AdES::VerifyASiC(const char* data, size_t sz, ASICVERIFY& av)
 	HRESULT hr = E_FAIL;
 
 	ZIPUTILS::ZIP z(data,sz);
-	vector<ZIPUTILS::mz_zip_archive_file_stat> fi;
+	vector<::mz_zip_archive_file_stat> fi;
 	z.EnumFiles(fi);
 	if (fi.empty())
 		return hr;

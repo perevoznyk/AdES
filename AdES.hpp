@@ -1,5 +1,3 @@
-
-
 #include <cryptxml.h>
 #include <memory>
 #include <tuple>
@@ -227,20 +225,6 @@ public:
 };
 
 
-#ifdef _WIN64
-#ifdef _DEBUG
-#pragma comment(lib,".\\packages\\zlib-msvc14-x64.1.2.11.7795\\build\\native\\lib_debug\\zlibstaticd.lib")
-#else
-#pragma comment(lib,".\\packages\\zlib-msvc14-x64.1.2.11.7795\\build\\native\\lib_release\\zlibstatic.lib")
-#endif
 
-#else
-#ifdef _DEBUG
-#pragma comment(lib,".\\packages\\zlib-msvc14-x86.1.2.11.7795\\build\\native\\lib_debug\\zlibstaticd.lib")
-#else
-#pragma comment(lib,".\\packages\\zlib-msvc14-x86.1.2.11.7795\\build\\native\\lib_release\\zlibstatic.lib")
-#endif
-#pragma comment(lib,"vcruntime.lib")
-#endif
 
 

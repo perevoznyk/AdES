@@ -1,11 +1,5 @@
+#include "miniz.h"
 
-
-
-#ifdef _WIN64
-#include ".\\packages\\zlib-msvc14-x86.1.2.11.7795\\build\\native\\include\\zlib.h"
-#else
-#include ".\\packages\\zlib-vc140-static-64.1.2.11\\lib\\native\\include\\zlib.h"
-#endif
 
 
 
@@ -69,7 +63,7 @@ namespace PDF
 
 	inline long long memstr(const char* arr, long long length, const char* tofind, long long flength) {
 		for (long long i = 0; i < length - flength; ++i) {
-			if (memcmp(arr + i, tofind, flength) == 0)
+			if (memcmp(arr + i, tofind, (size_t)flength) == 0)
 				return i;
 		}
 		return (long long)-1;
@@ -77,7 +71,7 @@ namespace PDF
 
 	inline long long memrstr(const char* arr, long long length, const char* tofind, long long flength) {
 		for (long long i = (length - flength); i >= 0; --i) {
-			if (memcmp(arr + i, tofind, flength) == 0)
+			if (memcmp(arr + i, tofind, (size_t)flength) == 0)
 				return i;
 		}
 		return (long long)-1;
@@ -148,7 +142,7 @@ namespace PDF
 		char f[30];
 		d.resize(hex.length() / 2);
 
-		for (long long i = 0; i < hex.length(); i += 2)
+		for (size_t i = 0; i < hex.length(); i += 2)
 		{
 			int c = 0;
 			f[0] = '0';
@@ -531,7 +525,7 @@ namespace PDF
 		OBJECT trailer;
 
 
-		OBJECT* findobject(long long num)
+		OBJECT* findobject(unsigned long long num)
 		{
 			OBJECT* d = 0;
 			for (auto& o : objects)
@@ -1057,15 +1051,15 @@ namespace PDF
 					if (row >= 1 && row < (width - wi3))
 					{
 						unsigned long long s2 = by;
-						unsigned long long r = eb2;
-						RefOfs |= (s2 << r);
+						unsigned long long reb2 = eb2;
+						RefOfs |= (s2 << reb2);
 						eb2 -= 8;
 					}
 					if (row >= (width - wi3))
 					{
 						unsigned long long s2 = by;
-						unsigned long long r = eb3;
-						RefGen |= (s2 << r);
+						unsigned long long reb3 = eb3;
+						RefGen |= (s2 << reb3);
 						eb3 -= 8;
 					}
 				}

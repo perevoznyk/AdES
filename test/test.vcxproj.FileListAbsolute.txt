@@ -1,2 +1,3 @@
 F:\TOOLS\AdES\test\test.exe
 F:\TOOLS\AdES\test\test.pdb
+C:\Users\600014314\Documents\Visual Studio 2019\Playground\ades-fixed\test\test.exe
