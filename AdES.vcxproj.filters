@@ -416,6 +416,9 @@
     <ClInclude Include="miniz.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="xml\xml3all.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include=".\asn1\cades\cades.asn1" />

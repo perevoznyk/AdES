@@ -173,6 +173,7 @@
     <ClInclude Include="AdES.hpp" />
     <ClInclude Include="miniz.h" />
     <ClInclude Include="pdf.hpp" />
+    <ClInclude Include="xml\xml3all.h" />
     <ClInclude Include="zipall.hpp" />
   </ItemGroup>
   <ItemGroup>
